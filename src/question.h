@@ -9,25 +9,30 @@ using namespace std;
 
 class Question{
 
-    private:
+    protected:
         string question;
         string correctAnswer;
         vector<string> answers;
+        int score;
+        int noOfQuestions;
+        string imageLink;
 
     public:
-        Question(string);
-        Question(ifstream);
+        Question(ifstream&);
 
         void setCorrectAnswer(string);
         void addAnswer(string);
+        bool addAnswer(ifstream&);
 
-        void readAnswer(ifstream f);
-
-        string getQuestion();
-        vector<string> getAnswers();
-        string getCorrectAnswer();
+        void setImage(string);
+        void setImage(ifstream&);
 
         bool validate();
+
+        void print();
+
+        void assign(ifstream &);
+        void reset();
 };
 
 #endif
