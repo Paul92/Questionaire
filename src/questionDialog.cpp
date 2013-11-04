@@ -24,6 +24,7 @@ void QuestionDialog::addButtons(){
         string label("A");
         label[0] += i;
         buttons.push_back(new QPushButton(QString::fromStdString(label)));
+        buttons[buttons.size() - 1] -> setMinimumHeight(50);
     }
 }
 
@@ -39,6 +40,7 @@ void QuestionDialog::addAnswers(){
 void QuestionDialog::generateLayout(){
 
     buttonLayout = new QHBoxLayout;
+    buttonLayout -> addStretch();
     for(unsigned int i = 0; i < buttons.size(); i++){
         buttonLayout -> addWidget(buttons[i]);
     }
@@ -53,11 +55,16 @@ void QuestionDialog::generateLayout(){
     questionAndImage -> addWidget(questionLabel);
     questionAndImage -> addWidget(imageLabel);
 
+    QFrame* line = new QFrame();
+    line->setFrameShape(QFrame::HLine);
+    line->setFrameShadow(QFrame::Sunken);
+
     mainLayout = new QVBoxLayout;
     mainLayout -> addLayout(questionAndImage);
     mainLayout -> addLayout(answerLabelsLayout);
-    mainLayout -> addLayout(buttonLayout);
     mainLayout -> addStretch();
+    mainLayout->addWidget(line);
+    mainLayout -> addLayout(buttonLayout);
 
     this -> setFixedSize(640, 480);
 }
