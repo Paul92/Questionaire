@@ -1,19 +1,29 @@
-Cum credeti ca ar trebui folosit noul chestionar ce implementeaza noile tehnologii  la noi?
+Cum se numeste capitala Slovaciei?
 none
-+ Correct
-- asfdf
-- bsfsdd
-- fdsdf
++ Bratislava
+- Madrid
+- Scopje
+- Puerto Rico
 
-balsd
-180.jpg
-+ C
-- fdsg
-- gfd
-
-BLASDSD
+Care dintre urmatorii nervi cranieni sunt senzoriali?
 none
-+ CD
-- fdsd
-- dfdsdf
-- fdsf
++ I
+- IV 
+- V
+- VII
+
+Ce denumire are urmatorul compus organic?
+imagini/intrebarea3.png
++ acid acetilsalicilic
+- acid salicilic
+- acid malonic
+- acroleina
+- glicol
+
+Care dintre urmatoarele este o adresa IPv4 valida?
+none
++ 192.222.1.50
+- 266.1.1.1
+- 8.79.0.350
+- 34.80.2
+
